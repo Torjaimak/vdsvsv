@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clara Runner</title>
+</head>
+<body>
+    <h1>Clara Runner Game</h1>
+
+  
+    <a href="index.html">Restart</a>
+    
+
+    <script src="script.js"></script>
+
+    <div id="canvas-container" style="position: relative;">
+        <canvas id="Board"></canvas>
+        <button id="startButton" style="position: absolute;">Start Game</button>
+        <button id="retryButton" style="position: absolute; display: none;">Retry</button>
+    </div>
+
+
+    
+    <style>
+        body {
+            margin: 0;
+            height: 50vh; /* ความสูงของ viewport */
+            display: grid;
+            place-items: center; /* จัดตำแหน่งทั้งแนวนอนและแนวตั้ง */
+            background-color: #f0f0f0; /* สีพื้นหลัง */
+        }
+    
+        #canvas-container {
+            position: relative;
+            width: 1000px; /* ความกว้างของ canvas */
+            height: 300px; /* ความสูงของ canvas */
+            background-image: url('https://t3.ftcdn.net/jpg/04/73/34/22/360_F_473342226_mGRsjBL2bTou0qLefOEnOMAb2lTRI0wm.jpg'); /* ใช้ภาพพื้นหลัง */
+            background-size: cover; /* ปรับขนาดภาพให้ครอบคลุมพื้นที่ */
+            background-position: center; /* จัดตำแหน่งภาพไว้ที่กลาง */
+            background-repeat: no-repeat; /* ห้ามทำซ้ำภาพ */
+        }
+    
+        canvas {
+            display: block; /* ป้องกันการแสดงขอบ */
+        }
+    
+        /* ตัวอย่าง CSS สำหรับปุ่ม */
+        button {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    
+    
+
+</body>
+</html>
